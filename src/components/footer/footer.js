@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Typography, Grid, Link} from '@material-ui/core';
+import { Typography, Grid, Link, Container, CssBaseline} from '@material-ui/core';
 import { useStyles } from './styles'
 import { Email, Phone, Instagram, Facebook, Twitter } from '@material-ui/icons';
 
@@ -8,10 +8,11 @@ export default function Footer(){
     const classes = useStyles();
     return(
         <div className={classes.footer}>
-            {/* <CssBaseline/> */}
+            <CssBaseline/>
             {/* <Divider style={{width: "100%"}} /> */}
-            {/* <Container className={classes.container}> */}
+            <Container className={classes.container}>
                 <Grid container className={classes.gridContainer} >
+        
                     <Grid item className={classes.gridItem} xs={12} md={4} lg={4}>
                         <Typography className={classes.heading}>
                             Our Generation
@@ -60,7 +61,10 @@ export default function Footer(){
                         </Typography>
                     </Grid>
                 </Grid>
-            {/* </Container> */}
+             </Container> 
+            <div className={classes.footerUi}></div>
+            <div className={classes.bodyUi}></div>
+
         </div>
     )
     

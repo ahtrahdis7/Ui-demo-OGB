@@ -1,5 +1,7 @@
 import {makeStyles} from '@material-ui/core';
 
+const size = 45;
+
 export const useStyles = makeStyles({
     mainDiv:{
         paddingTop: 160,
@@ -15,7 +17,7 @@ export const useStyles = makeStyles({
         flexDirection: 'row',
         justifyContent: 'space-around',
         // flexWrap: 'wrap'
-        marginBottom: 130
+        marginBottom: 111
     },
     gridItem:{
         marginTop:30,
@@ -31,5 +33,6 @@ export const useStyles = makeStyles({
     text:{
         marginTop: 10,
         fontSize: 20,
-    }
+    },
+    
 })
